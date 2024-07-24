@@ -1,9 +1,9 @@
 # HAproxy postgresql
 
 ## List Host dan Role masing-masing Host
-- master  192.168.100.40 hapsqlmaster.labs247.com   Role: Etcd dan HAproxy
-- node1   192.168.100.42 hapsqlworker01.labs247.com Role: Postgresql dan Patroni
-- node2   192.168.100.59 hapsqlworker02.labs247.com Role: Postgresql dan Patroni
+- master  192.168.100.40 hapsqlmaster.halo.com   Role: Etcd dan HAproxy
+- node1   192.168.100.42 hapsqlworker01.halo.com Role: Postgresql dan Patroni
+- node2   192.168.100.59 hapsqlworker02.halo.com Role: Postgresql dan Patroni
 
 ## Step 
 
