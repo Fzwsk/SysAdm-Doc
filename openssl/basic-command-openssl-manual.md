@@ -79,6 +79,7 @@ running basic command openssl secara manual
    keyUsage = critical,digitalSignature,keyEncipherment
    extendedKeyUsage = clientAuth
    ```
+   
    -jika sudah maka tinggal save 
 
    -lalu Membuat CA key di folder self-managed-ca
@@ -230,8 +231,7 @@ running basic command openssl secara manual
 
         # Load configuration files for the default server block.
         include /etc/nginx/default.d/*.conf;
-
-  3.location / {
+     3. location / {
         }
 
         error_page 404 /404.html;
@@ -262,7 +262,9 @@ running basic command openssl secara manual
         # Load configuration files for the default server block.
         include /etc/nginx/default.d/*.conf;
 
- 8. location / {
+8. location 
+```
+/ {
         }
 
         error_page 404 /404.html;
