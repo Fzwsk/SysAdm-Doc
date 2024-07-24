@@ -16,8 +16,8 @@ sudo virsh list --all
 ```
 
 ```
-[bintang@fedora teraform]$ sudo virsh list --all
-[sudo] password for bintang: 
+[fzwsk@fedora teraform]$ sudo virsh list --all
+[sudo] password for fzwsk: 
  Id   Name                    State
 ----------------------------------------
  -    centos7.0               shut off
@@ -36,13 +36,13 @@ sudo virsh undefine name
 ```
 contohnya
 ```
-[bintang@fedora teraform]$ sudo virsh undefine node-01
+[fzwsk@fedora teraform]$ sudo virsh undefine node-01
 Domain 'node-01' has been undefined
 
-[bintang@fedora teraform]$ sudo virsh undefine node-02
+[fzwsk@fedora teraform]$ sudo virsh undefine node-02
 Domain 'node-02' has been undefined
 
-[bintang@fedora teraform]$ sudo virsh undefine node-03
+[fzwsk@fedora teraform]$ sudo virsh undefine node-03
 Domain 'node-03' has been undefined
 ```
 
