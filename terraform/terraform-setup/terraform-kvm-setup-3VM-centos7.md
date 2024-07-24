@@ -119,21 +119,21 @@ provider "libvirt" {
 resource "libvirt_volume" "volume-vm1" {
   name = "${var.vm_name[0]}.img"
   pool = "default"
-  source = "/home/bintang/Downloads/CentOS-7-x86_64-GenericCloud.qcow2"
+  source = "/home/fajar/Downloads/CentOS-7-x86_64-GenericCloud.qcow2"
   format = "qcow2"
 }
 
 resource "libvirt_volume" "volume-vm2" {
   name = "${var.vm_name[1]}.img"
   pool = "default"
-  source = "/home/bintang/Downloads/CentOS-7-x86_64-GenericCloud.qcow2"
+  source = "/home/fajar/Downloads/CentOS-7-x86_64-GenericCloud.qcow2"
   format = "qcow2"
 }
 
 resource "libvirt_volume" "volume-vm3" {
   name = "${var.vm_name[2]}.img"
   pool = "default"
-  source = "/home/bintang/Downloads/CentOS-7-x86_64-GenericCloud.qcow2"
+  source = "/home/fajar/Downloads/CentOS-7-x86_64-GenericCloud.qcow2"
   format = "qcow2"
 }
 
@@ -296,12 +296,12 @@ chpasswd:
      root:password
   expire: false
 users:
-  - name: bintang
-# gecos: "bintang"
-#    primary_group: bintang
+  - name: fajar
+# gecos: "fajar"
+#    primary_group: fajar
     sudo: ALL=(ALL) NOPASSWD:ALL
     groups: users, admin
-    ssh_authorized_keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIwj89b5iI1VAhsFx6KPGTZxrgS+lxwwK+62kgCwmBcOj9zOZud0rnNuhs7ZSF/V4bB+CbLGeHQ0jadN40QG0xBNLX1afab7wkXSYQuDKo6ubOO/wt3glE1PcVnYLhJqXMHbqXIeD4+02UZdXSOSTmEzcP3uGzQX2mn8Z4j24FFFAOVllWJnXmTLMC8giemyqh12bEwcZGquseLSc4pbtgOp3lDSb0thg8MiUfnbH/Hacq64TbiBBfU4RgHBmvTrtgDhrSXD25/69IVU5EZFAQNoApgJXt/G/16QI3PXIgetYYI1u8jLxndA215GakUT5cyw9khiJkB6ae+RHJ+XDbohlqKxo/c5AnQ8NTyEdkqqnypjUrzY4eOSmSc8AdQTDc1IgxLMKfulBImRYUKQgm8xn29XyOavXR9YzvE83/LfUoXuiZjwHGV+gz6CZHm4KrRnpbwsGCYfH4JKwsDUh1iT+XE6LQEEIfM2RWp0ffv1kOtAZdMwn+lVt+/mq35is= bintang@fedora
+    ssh_authorized_keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIwj89b5iI1VAhsFx6KPGTZxrgS+lxwwK+62kgCwmBcOj9zOZud0rnNuhs7ZSF/V4bB+CbLGeHQ0jadN40QG0xBNLX1afab7wkXSYQuDKo6ubOO/wt3glE1PcVnYLhJqXMHbqXIeD4+02UZdXSOSTmEzcP3uGzQX2mn8Z4j24FFFAOVllWJnXmTLMC8giemyqh12bEwcZGquseLSc4pbtgOp3lDSb0thg8MiUfnbH/Hacq64TbiBBfU4RgHBmvTrtgDhrSXD25/69IVU5EZFAQNoApgJXt/G/16QI3PXIgetYYI1u8jLxndA215GakUT5cyw9khiJkB6ae+RHJ+XDbohlqKxo/c5AnQ8NTyEdkqqnypjUrzY4eOSmSc8AdQTDc1IgxLMKfulBImRYUKQgm8xn29XyOavXR9YzvE83/LfUoXuiZjwHGV+gz6CZHm4KrRnpbwsGCYfH4JKwsDUh1iT+XE6LQEEIfM2RWp0ffv1kOtAZdMwn+lVt+/mq35is= fajar@fedora
 hostname: "${hostname}.${domain}"
 packages:
   - wget
