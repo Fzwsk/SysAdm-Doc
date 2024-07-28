@@ -1,2 +1,2 @@
 # System Administrator
-This repo just for keeping documents from job as a System Administrator 
+This repo contains documentation about working as a System Administrator.
