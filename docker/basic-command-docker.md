@@ -8,7 +8,7 @@ basic command docker
 2. download image from docker hub
 
    ```
-   docker imagel pull isikannamaimage:isikanjenistag
+   docker image pull isikannamaimage:isikanjenistag
    ```
 3. delete image 
 
